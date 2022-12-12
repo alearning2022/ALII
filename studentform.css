@@ -1,0 +1,84 @@
+@import url('https://fonts.googleapis.com/css?family=Poppins:200,300,400,500,600,700,800,900&display=swap');
+
+*
+{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: 'Poppins', sans-serif;
+    
+}
+
+body > table{
+    content: '';
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    background: linear-gradient(180deg,#8ae0fa,#a9ddf5,#b8f4cd);
+    z-index: 1;
+    mix-blend-mode: overlay;
+}
+
+table{
+    border-collapse: collapse;
+    text-align: center;
+}
+table.list{
+    width:100%;
+    text-align: center;
+}
+table.list td{
+    text-align: center;
+}
+td, th {
+    border: 1px solid #58bbd9;
+    text-align: left;
+    padding: 8px;
+}
+tr:nth-child(even),table.list thead>tr {
+    background-color: #41aecf;
+}
+input[type=text], input[type=number] {
+    width: 100%;
+    padding: 12px 20px;
+    margin: 8px 0;
+    display: inline-block;
+    border: 1px solid #afffcb;
+    border-radius: 4px;
+    box-sizing: border-box;
+}
+input[type=submit]{
+    width: 30%;
+    background-color: #d9e9f1;
+    color: #000;
+    padding: 14px 20px;
+    margin: 8px 0;
+    border: none;
+    border-radius: 4px;
+    cursor: pointer;
+}
+form{
+    background-color: #61b3c9;
+    padding: 10px;
+
+}
+form div.form-action-buttons{
+    text-align: center;
+
+}
+a{
+    cursor: pointer;
+    text-decoration: underline;
+    color: #001f30;
+    margin-right: 4px;
+}
+label.validation-error{
+    color:   rgb(177, 62, 0);
+    margin-left: 5px;
+    font-size: small;
+}
+.hide{
+    display:none;
+}
